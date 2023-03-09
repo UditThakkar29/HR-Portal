@@ -1,5 +1,12 @@
 <div class="col-lg-10 max-auto">
   <h1 class="text-center mt-5 mb-4">Contact Us</h1>
   <%= render 'shared/dummy'%>
+
+<%# Form tag %>
+  <%= form_tag("/about", :method => "get") do %>
+   <%= label_tag(:q, "Search:") %>
+   <%= text_field_tag(:q) %>
+   <%= submit_tag("Search") %>
+  <% end %>
 </div>
 
