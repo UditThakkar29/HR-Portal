@@ -1,4 +1,6 @@
 class Employee < ApplicationRecord
+  has_many :documents
+
   validates :fname, :lname, presence: true
   validates :email, presence: true, uniqueness: true
   validates :city, :state, :country, :pincode, :address_1, presence: true
