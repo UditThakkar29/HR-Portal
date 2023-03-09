@@ -4,7 +4,7 @@ class Employee < ApplicationRecord
   validates :city, :state, :country, :pincode, :address_1, presence: true
 
   def name
-    "#{fname} #{lname}".strip
+    "#{fname} #{mname} #{lname}".strip
   end
 
   def full_address
