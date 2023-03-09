@@ -1214,6 +1214,7 @@ Migrating to CreateEmployees (20230306130231)
   [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2023-03-07 11:11:01 +0530
   [1m[35m (8.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -1547,11 +1548,1039 @@ Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 648
 
 
 Started GET "/employees" for 127.0.0.1 at 2023-03-07 11:55:24 +0530
+=======
+Started GET "/" for 127.0.0.1 at 2023-03-07 18:37:33 +0000
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1124)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+ERROR: [Errno 21] Is a directory: 'bin'
+CRITICAL:root:Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/vagrant/rubypp/rails/HR-Portal/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/vagrant/rubypp/rails/HR-Portal/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 345)
+  Rendered layout layouts/application.html.erb (Duration: 938.1ms | Allocations: 22305)
+Completed 200 OK in 963ms (Views: 947.0ms | ActiveRecord: 0.0ms | Allocations: 26451)
+
+
+Started GET "/contact" for 127.0.0.1 at 2023-03-07 18:37:38 +0000
+Processing by PagesController#contact_us as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact_us.html.erb within layouts/application
+  Rendered shared/_dummy.html.erb (Duration: 1.5ms | Allocations: 124)
+  Rendered pages/contact_us.html.erb within layouts/application (Duration: 6.2ms | Allocations: 547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 4102)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 5602)
+
+
+Started GET "/privacy-policy" for 127.0.0.1 at 2023-03-07 18:37:48 +0000
+Processing by PagesController#privacy_policy as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/privacy_policy.html.erb within layouts/application
+  Rendered shared/_dummy.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered pages/privacy_policy.html.erb within layouts/application (Duration: 2.2ms | Allocations: 230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 4214)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 4793)
+
+
+Started GET "/about" for 127.0.0.1 at 2023-03-07 18:37:49 +0000
+Processing by PagesController#about_us as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered shared/_dummy.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered pages/about_us.html.erb within layouts/application (Duration: 2.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4214)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 4785)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-07 18:37:52 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 76)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4148)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 4591)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-07 18:50:02 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3560)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 4002)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:20:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/employees"):
+  
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:21:23 +0000
+Processing by EmployeesController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 906)
+
+
+  
+SyntaxError (/home/vagrant/rubypp/rails/HR-Portal/app/models/employee.rb:4: syntax error, unexpected symbol literal
+  validates :city, :state. :country, :pincode, :address_1...
+                           ^
+):
+  
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/controllers/employees_controller.rb:3:in `index'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:21:52 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 226)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 14872)
+Completed 200 OK in 56ms (Views: 53.1ms | Allocations: 16639)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:24:15 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1314)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1384)
+Completed 500 Internal Server Error in 11ms (Allocations: 2599)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.middle_name %> <%= employee.last_name %></td> %>
+                <td><%= "#{employee.first_name} #{employee.last_name}"</td>   %>
+                <td><%= employee.email %></td>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.middle_name %> <%= employee.last_name %></td> %>
+17:                    <td><%= "#{employee.first_name} #{employee.last_name}"</td>   %>
+18:                    <td><%= employee.email %></td>
+19:                    <td><%= employee.city %></td>
+20:                    <td><%= employee.state %></td>
+21:                    <td><%= employee.country %></td>
+22:                    <td><%= employee.pincode %></td>
+23:                    <td><%= employee.address %></td>
+24:                </tr>
+25:            <% end %>
+26:        </tbody>
+27:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:24:54 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1292)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1362)
+Completed 500 Internal Server Error in 5ms (Allocations: 2570)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td>   %>
+                <td><%= employee.email %></td>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td>   %>
+18:                    <td><%= employee.email %></td>
+19:                    <td><%= employee.city %></td>
+20:                    <td><%= employee.state %></td>
+21:                    <td><%= employee.country %></td>
+22:                    <td><%= employee.pincode %></td>
+23:                    <td><%= employee.address %></td>
+24:                </tr>
+25:            <% end %>
+26:        </tbody>
+27:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td>   );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:25:26 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1289)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1359)
+Completed 500 Internal Server Error in 8ms (Allocations: 2567)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+                <td><%= employee.email %></td>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+18:                    <td><%= employee.email %></td>
+19:                    <td><%= employee.city %></td>
+20:                    <td><%= employee.state %></td>
+21:                    <td><%= employee.country %></td>
+22:                    <td><%= employee.pincode %></td>
+23:                    <td><%= employee.address %></td>
+24:                </tr>
+25:            <% end %>
+26:        </tbody>
+27:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:25:37 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1205)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1275)
+Completed 500 Internal Server Error in 5ms (Allocations: 2483)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+                
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+18:                    
+19:                </tr>
+20:            <% end %>
+21:        </tbody>
+22:    </table>
+  
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:19: unknown regexp options - tr
+app/views/employees/index.html.erb:19: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:22: unknown regexp options - tabl
+app/views/employees/index.html.erb:24: unterminated string meets end of file
+app/views/employees/index.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:25:55 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1289)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1359)
+Completed 500 Internal Server Error in 5ms (Allocations: 2567)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+                <td><%= employee.email %></td>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+18:                    <td><%= employee.email %></td>
+19:                    <td><%= employee.city %></td>
+20:                    <td><%= employee.state %></td>
+21:                    <td><%= employee.country %></td>
+22:                    <td><%= employee.pincode %></td>
+23:                    <td><%= employee.address %></td>
+24:                </tr>
+25:            <% end %>
+26:        </tbody>
+27:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:26:04 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1274)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1344)
+Completed 500 Internal Server Error in 6ms (Allocations: 2557)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%# <td><%= employee.first_name%> <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+18:                    <td><%= employee.city %></td>
+19:                    <td><%= employee.state %></td>
+20:                    <td><%= employee.country %></td>
+21:                    <td><%= employee.pincode %></td>
+22:                    <td><%= employee.address %></td>
+23:                </tr>
+24:            <% end %>
+25:        </tbody>
+26:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:25: unknown regexp options - tbdy
+app/views/employees/index.html.erb:26: syntax error, unexpected '<'
+app/views/employees/index.html.erb:28: unterminated regexp meets end of file
+app/views/employees/index.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/employees" for 127.0.0.1 at 2023-03-07 19:26:42 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1269)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1339)
+Completed 500 Internal Server Error in 8ms (Allocations: 2547)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table class="table table-bordered mt-5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @employees.each do |employee| %>
+            <tr>
+                <%= employee.mname %> <%= employee.lname %></td> %>
+                <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+                <td><%= employee.email %></td>
+                <td><%= employee.city %></td>
+                <td><%= employee.state %></td>
+                <td><%= employee.country %></td>
+                <td><%= employee.pincode %></td>
+                <td><%= employee.address %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+):
+1:    <table class="table table-bordered mt-5">
+2:        <thead>
+3:            <tr>
+4:                <th>Name</th>
+5:                <th>Email</th>
+6:                <th>City</th>
+7:                <th>State</th>
+8:                <th>Country</th>
+9:                <th>Pincode</th>
+10:                <th>Address</th>
+11:            </tr>
+12:        </thead>
+13:        <tbody>
+14:            <% @employees.each do |employee| %>
+15:                <tr>
+16:                    <%= employee.mname %> <%= employee.lname %></td> %>
+17:                    <td><%= "#{employee.fname} #{employee.lname}"</td> %>
+18:                    <td><%= employee.email %></td>
+19:                    <td><%= employee.city %></td>
+20:                    <td><%= employee.state %></td>
+21:                    <td><%= employee.country %></td>
+22:                    <td><%= employee.pincode %></td>
+23:                    <td><%= employee.address %></td>
+24:                </tr>
+25:            <% end %>
+26:        </tbody>
+27:    </table>
+  
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/employees/index.html.erb:19: syntax error, unexpected '<'
+app/views/employees/index.html.erb:20: unknown regexp options - td
+app/views/employees/index.html.erb:21: syntax error, unexpected '<'
+app/views/employees/index.html.erb:22: unknown regexp options - td
+app/views/employees/index.html.erb:23: syntax error, unexpected '<'
+app/views/employees/index.html.erb:24: unknown regexp options - tr
+app/views/employees/index.html.erb:27: unknown regexp options - tabl
+app/views/employees/index.html.erb:29: unterminated string meets end of file
+app/views/employees/index.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/employees/index.html.erb:18: unknown regexp options - td
+app/views/employees/index.html.erb:18: unmatched close parenthesis: /td> );@outStarted GET "/" for 127.0.0.1 at 2023-03-08 16:00:34 +0000
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 345)
+  Rendered layout layouts/application.html.erb (Duration: 110.2ms | Allocations: 13297)
+Completed 200 OK in 155ms (Views: 123.6ms | ActiveRecord: 0.0ms | Allocations: 16443)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:00:46 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 974)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.8ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 4519)
+Completed 200 OK in 42ms (Views: 33.1ms | ActiveRecord: 1.7ms | Allocations: 6048)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:03:23 +0000
 Processing by EmployeesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering employees/index.html.erb within layouts/application
   [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
   ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 75.7ms | Allocations: 11849)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.3ms | Allocations: 12310)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:03:40 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 5130)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 0.4ms | Allocations: 6381)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:04:10 +0000
+>>>>>>> feat-employee-creation
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+<<<<<<< HEAD
   Rendered employees/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 928)
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 224)
@@ -1603,11 +2632,65 @@ Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.4ms | Allocations: 649
 
 
 Started GET "/employees" for 127.0.0.1 at 2023-03-07 11:59:29 +0530
+=======
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 3.1ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 11017)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 0.3ms | Allocations: 11469)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:04:58 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 11021)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.4ms | Allocations: 11472)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:06:00 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 30.3ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 5122)
+Completed 200 OK in 66ms (Views: 62.2ms | ActiveRecord: 1.0ms | Allocations: 6361)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:06:58 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 11059)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.5ms | Allocations: 11512)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:08:41 +0000
+>>>>>>> feat-employee-creation
 Processing by EmployeesController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering employees/index.html.erb within layouts/application
   [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
   ↳ app/views/employees/index.html.erb:14
+<<<<<<< HEAD
   Rendered employees/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 928)
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 224)
@@ -1948,5 +3031,1239 @@ Entrypoint application = js/application-27eb6b8290db4fb615b1.js js/application-2
   Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 147)
   Rendered layout layouts/application.html.erb (Duration: 1470.5ms | Allocations: 4947)
 Completed 200 OK in 1473ms (Views: 1471.5ms | Allocations: 5384)
+=======
+  Rendered employees/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 5130)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 0.3ms | Allocations: 6373)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:08:56 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.3ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 5133)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 0.7ms | Allocations: 6376)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:09:07 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 3.0ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 5129)
+Completed 200 OK in 44ms (Views: 38.5ms | ActiveRecord: 0.2ms | Allocations: 6381)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:11:52 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5129)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms | Allocations: 6368)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEmployee Create (3.1ms)[0m  [1m[32mINSERT INTO "employees" ("fname", "lname", "email", "city", "state", "pincode", "address_1", "address_2", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Udit"], ["lname", "Thakkar"], ["email", "u@gmail.com"], ["city", "indore"], ["state", "MP"], ["pincode", "453331"], ["address_1", "Silicon City"], ["address_2", "Indore"], ["created_at", "2023-03-08 16:14:56.402593"], ["updated_at", "2023-03-08 16:14:56.402593"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:15:08 +0000
+Processing by EmployeesController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 902)
+
+
+  
+SyntaxError (/home/vagrant/rubypp/rails/HR-Portal/app/models/employee.rb:4: syntax error, unexpected symbol literal
+  validates :city, :state. :country, :pincode, :address_1...
+                           ^
+):
+  
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/controllers/employees_controller.rb:3:in `index'
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:16:31 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/employees/index.html.erb:14
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 8134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 107)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 11649)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 2.0ms | Allocations: 12752)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:17:47 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5279)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms | Allocations: 6522)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:17:57 +0000
+Processing by EmployeesController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 890)
+
+
+  
+SyntaxError (/home/vagrant/rubypp/rails/HR-Portal/app/models/employee.rb:4: syntax error, unexpected symbol literal
+  validates :city, :state. :country, :pincode, :address_1...
+                           ^
+):
+  
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/models/employee.rb:4: syntax error, unexpected symbol literal
+app/controllers/employees_controller.rb:3:in `index'
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:18:16 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/employees/index.html.erb:14
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 7371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 107)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 10924)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 1.9ms | Allocations: 12245)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:18:41 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4152)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 4603)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:18:42 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4152)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 4603)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:19:11 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5255)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms | Allocations: 6498)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:19:18 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4152)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 4604)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:19:18 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4152)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 4603)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:19:19 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4152)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 4603)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "employees"[0m
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mEmployee Load (1.0ms)[0m  [1m[34mSELECT "employees".* FROM "employees" ORDER BY "employees"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEmployee Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? AND "employees"."id" != ? LIMIT ?[0m  [["email", "u@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mEmployee Update (1.5ms)[0m  [1m[33mUPDATE "employees" SET "country" = ?, "updated_at" = ? WHERE "employees"."id" = ?[0m  [["country", "India"], ["updated_at", "2023-03-08 16:47:25.538514"], ["id", 1]]
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:47:29 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:14
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4155)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.3ms | Allocations: 4607)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 16:50:29 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 2.2ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 5213)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.4ms | Allocations: 6470)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:12:45 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/employees/index.html.erb:16
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:16
+  Rendered employees/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 6942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 226)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 11237)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.7ms | Allocations: 13165)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:14:48 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:16
+  Rendered employees/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5215)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 6460)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:15:12 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:16
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5211)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.5ms | Allocations: 6457)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:29:28 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/employees/index.html.erb:18
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:18
+  Rendered employees/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 6987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 200)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 11239)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 1.1ms | Allocations: 13114)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:29:29 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 90)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 4152)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 4775)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:29:31 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 4396)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 5898)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:29:36 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:18
+  Rendered employees/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4191)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 4645)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:30:17 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1452)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2654)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"employees"}, missing required keys: [:id]
+Did you mean?  employee_url
+               employees_url
+               employees_path
+               new_employee_url):
+    1: <h1>HR Portal</h1>
+    2: 
+    3: <%= link_to "All Employees", employee_path%>
+    4: 
+    5: <!--
+    6: <%= link_to "About Us C.", controller: :pages, action: :about_us %>
+  
+app/views/home/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:31:09 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 392)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 199)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4691)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 5924)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:31:11 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.9ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:18
+  Rendered employees/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1472)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 5063)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.9ms | Allocations: 6067)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:32:08 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:18
+  Rendered employees/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 972)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 199)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5262)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 6501)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:33:10 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 980)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 199)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5270)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms | Allocations: 6509)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:33:44 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 199)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 5281)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.2ms | Allocations: 6527)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:34:33 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 224)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4444)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 5701)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:35:29 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 546)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4827)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 6076)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:37:57 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 8133)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 8202)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 9429)
+
+
+  
+ActionView::Template::Error (undefined method `tetx_field' for #<ActionView::Helpers::FormBuilder:0x00007fea9c24a408 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x00000000011d50>, @object=#<Employee id: nil, fname: nil, mname: nil, lname: nil, email: nil, city: nil, state: nil, country: nil, pincode: nil, address_1: nil, address_2: nil, created_at: nil, updated_at: nil>, @object_name="employee", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  text_field
+               time_field
+               date_field):
+    10:       <div class="col-lg-4">
+    11:         <div class="form-group">
+    12:           <%= form.label :fname, class: 'mb-2'%>
+    13:           <%= form.tetx_field :fname, class: 'form-control form-control-lg rounded-0'%>
+    14:         </div>
+    15:       </div>
+    16:     </div>
+  
+app/views/employees/new.html.erb:13
+app/views/employees/new.html.erb:8
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:38:06 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 853)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 5146)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6400)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:39:18 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1329)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5611)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6860)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:40:06 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 5682)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 6934)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:42:21 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.8ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 5894)
+Completed 200 OK in 48ms (Views: 42.5ms | Allocations: 7140)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:44:09 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 65.9ms | Allocations: 5178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 9372)
+Completed 200 OK in 86ms (Views: 83.7ms | Allocations: 10619)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:45:09 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6453)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 7704)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:45:42 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 6473)
+Completed 200 OK in 21ms (Views: 19.2ms | Allocations: 7720)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:47:10 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 6469)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 7721)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:47:12 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5168)
+Completed 200 OK in 11ms (Views: 9.6ms | Allocations: 5627)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:47:17 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6455)
+Completed 200 OK in 17ms (Views: 15.5ms | Allocations: 7700)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:47:24 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2173)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5922)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 7169)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:49:27 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3435)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 7188)
+Completed 200 OK in 18ms (Views: 16.5ms | Allocations: 8440)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:53:01 +0000
+Processing by EmployeesController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7385)
+Completed 200 OK in 53ms (Views: 27.0ms | ActiveRecord: 2.1ms | Allocations: 15104)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:53:29 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7272)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 8526)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:54:51 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7322)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 8571)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:55:08 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 7320)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 8569)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:55:24 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4969)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 0.3ms | Allocations: 6731)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:55:26 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3568)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 7380)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 7974)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 17:55:28 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4579)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms | Allocations: 5033)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-08 17:57:43 +0000
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 17:57:43 +0000
+Processing by EmployeesController#new as HTML
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[35m (1072.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:7:in `new'
+Started GET "/" for 127.0.0.1 at 2023-03-08 17:58:11 +0000
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+No template found for EmployeesController#create, rendering head :no_content
+Completed 204 No Content in 21898ms (ActiveRecord: 0.0ms | Allocations: 10647)
+
+
+  Rendered employees/new.html.erb within layouts/application (Duration: 9083.8ms | Allocations: 3467)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2023-03-08 18:14:01 +0000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 12318)
+Completed 200 OK in 72ms (Views: 59.0ms | ActiveRecord: 0.0ms | Allocations: 15560)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 18:14:20 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 7757)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 11065)
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 1.2ms | Allocations: 13280)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 18:14:21 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 25.1ms | Allocations: 5774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 9444)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 10078)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-08 18:14:23 +0000
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+No template found for EmployeesController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 1661)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 18:15:00 +0000
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/employees/index.html.erb:19
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 7410)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 10671)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 1.6ms | Allocations: 11926)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 18:15:02 +0000
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6865)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 7338)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-08 18:15:04 +0000
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for EmployeesController
+Did you mean?  new
+               index):
+  
+actionpack (6.1.7.2) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.6.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.2) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.2) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 18:15:11 +0000
+Processing by EmployeesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6376)
+Completed 200 OK in 27ms (Views: 10.3ms | ActiveRecord: 1.2ms | Allocations: 14066)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "employees"[0m
+Started POST "/employees" for 127.0.0.1 at 2023-03-08 18:16:57 +0000
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:11:in `create'
+No template found for EmployeesController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 1.0ms | Allocations: 7424)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-08 18:24:14 +0000
+Started GET "/employees" for 127.0.0.1 at 2023-03-08 18:24:30 +0000
+Started GET "/" for 127.0.0.1 at 2023-03-09 12:03:26 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1129)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/gammastack/Desktop/Rails/hr-app/public/packs
+[Webpacker] Hash: 804a8059a304061a3e74
+Version: webpack 4.46.0
+Time: 593ms
+Built at: 03/09/2023 12:03:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-271cf8931bb708d2d8bb.js    121 KiB  application  [emitted] [immutable]  application
+js/application-271cf8931bb708d2d8bb.js.map    133 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-271cf8931bb708d2d8bb.js js/application-271cf8931bb708d2d8bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 2051.1ms | Allocations: 20887)
+Completed 200 OK in 2062ms (Views: 2055.0ms | ActiveRecord: 0.0ms | Allocations: 24268)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-09 12:03:32 +0530
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 7665)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 11091)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 13372)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:21:51 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 42.9ms | Allocations: 9499)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 13130)
+Completed 200 OK in 60ms (Views: 56.4ms | Allocations: 14419)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:21:52 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+No template found for EmployeesController#create, rendering head :no_content
+Completed 204 No Content in 10ms (Allocations: 1716)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:22:16 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 7415)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 8674)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:22:18 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  Rendering layout layouts/application.html.erb
+  Rendering employees/create.html.erb within layouts/application
+  Rendered employees/create.html.erb within layouts/application (Duration: 1.3ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3363)
+Completed 200 OK in 21ms (Views: 17.8ms | Allocations: 3992)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:22:20 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 6158)
+Completed 200 OK in 30ms (Views: 28.2ms | Allocations: 6626)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:22:32 +0530
+Processing by EmployeesController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 3086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6330)
+Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 13481)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:22:33 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  Rendering layout layouts/application.html.erb
+  Rendering employees/create.html.erb within layouts/application
+  Rendered employees/create.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3290)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3815)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:22:35 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 6151)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 6612)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:22:59 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"dsa", "mname"=>"dsa", "lname"=>"dsa", "email"=>"dsa@g.com", "address_1"=>"dsa", "address_2"=>"dsa", "city"=>"dsa", "state"=>"dsa", "country"=>"dsad", "pincode"=>"das"}, "commit"=>"Create Employee"}
+  Rendering layout layouts/application.html.erb
+  Rendering employees/create.html.erb within layouts/application
+  Rendered employees/create.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3290)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3789)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:23:03 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6151)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6612)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-09 12:23:04 +0530
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4438)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.8ms | Allocations: 5539)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:23:06 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 6790)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 7253)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:23:07 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  Rendering layout layouts/application.html.erb
+  Rendering employees/create.html.erb within layouts/application
+  Rendered employees/create.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3300)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3820)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:23:09 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6160)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 6623)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:23:57 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/create.html.erb within layouts/application
+  Rendered employees/create.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3329)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 11217)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:24:09 +0530
+Processing by EmployeesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 3086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6368)
+Completed 200 OK in 17ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 14000)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:25:23 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/employees_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mEmployee Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 10729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 13946)
+Completed 200 OK in 34ms (Views: 14.2ms | ActiveRecord: 0.8ms | Allocations: 25281)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "employees"[0m
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:27:26 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mEmployee Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 8214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 11874)
+Completed 200 OK in 40ms (Views: 22.0ms | ActiveRecord: 0.8ms | Allocations: 15972)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:28:16 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mEmployee Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 17.9ms | Allocations: 11530)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 15185)
+Completed 200 OK in 47ms (Views: 27.7ms | ActiveRecord: 0.8ms | Allocations: 19282)
+
+
+Started GET "/employees" for 127.0.0.1 at 2023-03-09 12:30:28 +0530
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.1ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:19
+  Rendered employees/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4828)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 6088)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2023-03-09 12:30:29 +0530
+Processing by EmployeesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 4169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8042)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 8640)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:30:30 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mEmployee Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 13663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.1ms | Allocations: 76)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 16806)
+Completed 200 OK in 48ms (Views: 23.0ms | ActiveRecord: 0.9ms | Allocations: 20127)
+
+
+Started POST "/employees" for 127.0.0.1 at 2023-03-09 12:32:59 +0530
+Processing by EmployeesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "employee"=>{"fname"=>"", "mname"=>"", "lname"=>"", "email"=>"", "address_1"=>"", "address_2"=>"", "city"=>"", "state"=>"", "country"=>"", "pincode"=>""}, "commit"=>"Create Employee"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mEmployee Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "employees" WHERE "employees"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/employees_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 14866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.3ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 18526)
+Completed 200 OK in 42ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 22621)
+>>>>>>> feat-employee-creation
 
 
