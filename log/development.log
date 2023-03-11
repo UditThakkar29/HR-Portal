@@ -4660,3 +4660,39 @@ FOREIGN KEY ("employee_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/employees" for 127.0.0.1 at 2023-03-09 18:29:20 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmployeesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:21
+  Rendered employees/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6325)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 9601)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 11973)
+
+
+Started GET "/packs/js/application-27eb6b8290db4fb615b1.js" for 127.0.0.1 at 2023-03-09 18:29:20 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-27eb6b8290db4fb615b1.js"):
+  
+Started GET "/" for 127.0.0.1 at 2023-03-11 07:29:28 +0000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 8175)
+Completed 200 OK in 80ms (Views: 66.1ms | ActiveRecord: 0.0ms | Allocations: 11385)
+
+
+Started GET "/packs/js/application-27eb6b8290db4fb615b1.js" for 127.0.0.1 at 2023-03-11 07:29:28 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-27eb6b8290db4fb615b1.js"):
+  
